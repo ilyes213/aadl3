@@ -1,0 +1,22 @@
+   body {
+                direction: rtl;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            .ads-input {
+                width: 100%;
+                padding: 5px;
+                margin: 5px 0;
+                box-sizing: border-box;
+            }
+            .btn-primary {
+                background-color: rgb(255, 0, 0);
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+            .btn-primary:hover {
+                background-color: darkred;
+            }
